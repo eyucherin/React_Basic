@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import AppProfile from './AppProfile';
+import Counter from './components/Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppProfile/>
-
+    <Counter/>
   </React.StrictMode>
 );
 
