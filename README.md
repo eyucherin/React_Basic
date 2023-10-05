@@ -4,8 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # **Part 1 Profile Cards**
 
-1. learning how to create props 
+1. learning how to create props
 2. when trying to make box shadow --> use this [useful site](https://cssgenerator.org/box-shadow-css-generator.html)
+3. Event Handling in React
+    1. [React Official Docs](https://react.dev/learn/responding-to-events)
+    2. Important: Functions passed to event handlers must be passed, not called.
+        1. Correct :<span class="colour" style="color: rgb(235, 236, 240);">\<button onClick={handleClick}></span>
+        2. Wrong : <span class="colour" style="color: rgb(235, 236, 240);">\<button onClick={handleClick()}></span>
 
 # Available Scripts
 
@@ -72,4 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)# React_Basic
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)\# React\_Basic
