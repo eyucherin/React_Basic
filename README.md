@@ -17,9 +17,10 @@
     1. parent passes down state method to children so that children can modify parent state.
 3. What is a state? any data that needs to change within the UI
 
-### **Part 2 Counter App**
+### **Part 3 Product App**
 
-**1.**\[UseEffect\]\(React Docs\)**runs on every render so make sure to add second parameter**
+**1.**[UseEffect]**runs on every render so make sure to add second parameter**
+**\- when fetching from api\, fetch inside useEffect\.**
 
 ```
 useEffect(() => {
