@@ -17,5 +17,34 @@
     1. parent passes down state method to children so that children can modify parent state.
 3. What is a state? any data that needs to change within the UI
 
+### **Part 2 Counter App**
+
+**1.**\[UseEffect\]\(React Docs\)**runs on every render so make sure to add second parameter**
+
+```
+useEffect(() => {
+
+  //Runs only on the first render
+
+}, []);
+
+useEffect(() => {
+
+  //Runs on the first render
+
+  //And any time any dependency value changes
+
+}, [prop, state]);
+```
+
+2\. Iteration in jsx \-\-\> should always contain a key value
+
+```
+{product.map((product) => (
+<li key={product.id}>
+....
+</li>
+))}
+```
 <br>
 <br>
