@@ -1,8 +1,6 @@
-# Getting Started with Create React App
+# React Basics
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-# **Part 1 Profile Cards**
+### **Part 1 Profile Cards**
 
 1. learning how to create props
 2. when trying to make box shadow --> use this [useful site](https://cssgenerator.org/box-shadow-css-generator.html)
@@ -12,11 +10,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
         1. Correct :<span class="colour" style="color:rgb(235, 236, 240)">\<button onClick={handleClick}></span>
         2. Wrong : <span class="colour" style="color:rgb(235, 236, 240)">\<button onClick={handleClick()}></span>
 
-# **Part 2 Counter App**
+### **Part 2 Counter App**
 
-1. Creating a Counter app using react use State. 
-2. Parent has 2 counter children 
-    1. parent passes down state method to children so that children can modify parent state. 
+1. Creating a Counter app using react use State.
+2. Parent has 2 counter children
+    1. parent passes down state method to children so that children can modify parent state.
 3. What is a state? any data that needs to change within the UI
 
 <br>
