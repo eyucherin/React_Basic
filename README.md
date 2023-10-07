@@ -47,8 +47,6 @@ useEffect(() => {
 </li>
 ))}
 ```
-<br>
-<br>
 
 ### **Part 4 Pointer App**
  - when 2 state values are related use object 
