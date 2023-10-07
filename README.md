@@ -52,6 +52,11 @@ useEffect(() => {
 
 ### **Part 4 Pointer App**
  - when 2 state values are related use object 
-    - `const [position, setPosition] = useState({ x: 0, y: 0 });`
- - using event handler in React
+    - Instead of this:
+        - `Const [x,setX] = useState(0)`
+        - `Const [y,setX] = useState(0)`
+    - Do this:
+        - `Const [points,setPoints] = useState({x:0,y:0})`
+
+ - using event handler in React same as HTML. 
  - when using css value that changes use with inline style
