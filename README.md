@@ -58,3 +58,16 @@ useEffect(() => {
 
  - using event handler in React same as HTML. 
  - when using css value that changes use with inline style
+
+ ### **Part 5 Mentor App**
+ - Practice using useReducer 
+  - useReducer is like reducer array method in javascript but for objects. 
+   - JavaScript Reducer Example:
+
+  ```js
+  const numbers = [1, 2, 3, 4, 5];
+  const sum = numbers.reduce((accumulator,currentValue) => accumulator + currentValue, 0);
+  ```
+  - UseReducer(reducer,initialState)
+     - newState = reducer(currentState,action)
+
