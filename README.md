@@ -22,7 +22,7 @@
 **1.**[UseEffect]**runs on every render so make sure to add second parameter**
 **\- when fetching from api\, fetch inside useEffect\.**
 
-```
+```js
 useEffect(() => {
 
   //Runs only on the first render
@@ -40,7 +40,7 @@ useEffect(() => {
 
 2\. Iteration in jsx \-\-\> should always contain a key value
 
-```
+```js
 {product.map((product) => (
 <li key={product.id}>
 ....
