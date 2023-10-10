@@ -81,3 +81,16 @@ useEffect(() => {
 ## **Part 6 Counter 2 Using UseReducer**
  - A more simple implementation of useReducer, still needs practice...
 
+ ## **Part 7 Handling Forms** 
+  - ***Uncontrolled Component*** --> When there are values changing in the UI but there is no state that is observing it.
+  - in Forms, UI changes but we need a way to observe state changes. 
+  - ```js 
+    const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFrom({ ...form, [name]: value });
+  - in the form, we have separate name and value keys to determine what part to change.
+
+
+
+
+
