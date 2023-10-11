@@ -1,6 +1,6 @@
 # React: Review & Things I wish I knew earlier
 
-## **Part 1 Profile Cards AppProfile**
+## **Part 1 Profile Cards - AppProfile**
 
 1. learning how to create props
 2. when trying to make box shadow --> use this [useful site](https://cssgenerator.org/box-shadow-css-generator.html)
@@ -10,14 +10,14 @@
       1. Correct :<span class="colour" style="color:rgb(235, 236, 240)">\<button onClick={handleClick}></span>
       2. Wrong : <span class="colour" style="color:rgb(235, 236, 240)">\<button onClick={handleClick()}></span>
 
-## **Part 2 Counter App CounterApp**
+## **Part 2 Counter App - CounterApp**
 
 1. Creating a Counter app using react use State.
 2. Parent has 2 counter children
    1. parent passes down state method to children so that children can modify parent state.
 3. What is a state? any data that needs to change within the UI
 
-## **Part 3 Product App AppProduct**
+## **Part 3 Product App - AppProduct**
 
 **1.**[UseEffect]**runs on every render so make sure to add second parameter**
 **\- when fetching from api\, fetch inside useEffect\.**
@@ -61,7 +61,7 @@ useEffect(() => {
 - using event handler in React same as HTML.
 - when using css value that changes use with inline style
 
-## **Part 5 Mentor App AppMenors**
+## **Part 5 Mentor App - AppMenors**
 
 - Practice using useReducer
 - useReducer is like reducer array method in javascript but for objects.
@@ -78,11 +78,11 @@ useEffect(() => {
   UseReducer(reducer, initialState);
   newState = reducer(currentState, action);
   ```
-## **Part 6 Counter 2 Using UseReducer -- Counter2App**
+## **Part 6 Counter 2 Using UseReducer - Counter2App**
  - A more simple implementation of useReducer, still needs practice...
 
  ## **Part 7 Handling Forms - FormApp** 
-  - ***Uncontrolled Component*** --> When there are values changing in the UI but there is no state that is observing it.
+  - ***Uncontrolled Component***  When there are values changing in the UI but there is no state that is observing it.
   - in Forms, UI changes but we need a way to observe state changes. 
   - ```js 
     const handleChange = (e) => {
@@ -90,5 +90,6 @@ useEffect(() => {
     setFrom({ ...form, [name]: value });
   - in the form, we have separate name and value keys to determine what part to change.
  ## **Part 8 Higher Order Components(HOC) - HOCApp**
+  -  a function that takes a component and returns a new component with additional properties or behaviors.
   - 
 
