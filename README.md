@@ -96,7 +96,7 @@ useEffect(() => {
   </Card>
   ```
 
-## **Part 9 Context API AppTheme**
+## **Part 9 Context API - AppTheme**
 
 - Prop Drilling : process in React where data is passed from one part of the tree to another by going through multiple levels of components
 - In order to reduce prop drilling we use the useContext Hook in React.
@@ -107,7 +107,7 @@ useEffect(() => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
   ```
 
-## **Part 10 React Custom Hooks**
+## **Part 10 React Custom Hooks - CustomHookApp**
 
 - Custom hooks are just functions that start with "use" and can call other hooks. The primary reason to use custom hooks is to encapsulate and extract component logic into reusable functions.
 - Inside the Hook Function always return the functions or values you want to use throughout the program.
