@@ -9,7 +9,7 @@ export default function HOCApp() {
     
           <Card>
             <h1>Card2</h1>
-            <p>설명</p>
+            <p>card2 description</p>
           </Card>
 
         </>

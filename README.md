@@ -24,28 +24,21 @@
 
 ```js
 useEffect(() => {
-
-  //Runs only on the first render
-
+  //Runs only on the first render
 }, []);
 
 useEffect(() => {
-
-  //Runs on the first render
-
-  //And any time any dependency value changes
-
+  //Runs on the first render
+  //And any time any dependency value changes
 }, [prop, state]);
 ```
 
 2\. Iteration in jsx \-\-\> should always contain a key value
 
 ```js
-{product.map((product) => (
-<li key={product.id}>
-....
-</li>
-))}
+{
+  product.map((product) => <li key={product.id}>....</li>);
+}
 ```
 
 ## **Part 4 Pointer App**
@@ -66,30 +59,48 @@ useEffect(() => {
 - Practice using useReducer
 - useReducer is like reducer array method in javascript but for objects.
 - JavaScript Reducer Example:
-    ```js
-    const numbers = [1, 2, 3, 4, 5];
-    const sum = numbers.reduce(
+  ```js
+  const numbers = [1, 2, 3, 4, 5];
+  const sum = numbers.reduce(
     (accumulator, currentValue) => accumulator + currentValue,
     0
-    );
-    ```
+  );
+  ```
 - UseReducer
   ```js
   UseReducer(reducer, initialState);
   newState = reducer(currentState, action);
   ```
-## **Part 6 Counter 2 Using UseReducer - Counter2App**
- - A more simple implementation of useReducer, still needs practice...
 
- ## **Part 7 Handling Forms - FormApp** 
-  - ***Uncontrolled Component***  When there are values changing in the UI but there is no state that is observing it.
-  - in Forms, UI changes but we need a way to observe state changes. 
-  - ```js 
-    const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFrom({ ...form, [name]: value });
-  - in the form, we have separate name and value keys to determine what part to change.
- ## **Part 8 Higher Order Components(HOC) - HOCApp**
-  -  a function that takes a component and returns a new component with additional properties or behaviors.
-  - 
+## **Part 6 Counter 2 Using UseReducer - Counter2App**
+
+- A more simple implementation of useReducer, still needs practice...
+
+## **Part 7 Handling Forms - FormApp**
+
+- **_Uncontrolled Component_** When there are values changing in the UI but there is no state that is observing it.
+- in Forms, UI changes but we need a way to observe state changes.
+- ```js
+  const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFrom({ ...form, [name]: value });
+  ```
+- in the form, we have separate name and value keys to determine what part to change.
+
+## **Part 8 Higher Order Components(HOC) - HOCApp**
+
+- a function that takes a component and returns a new component with additional properties or behaviors.
+- ```js
+  <Card>
+    <p>Card1</p>
+  </Card>
+  ```
+
+## **Part 9 Context API AppTheme**
+
+- Prop Drilling : process in React where data is passed from one part of the tree to another by going through multiple levels of components
+- In order to reduce prop drilling we use the useContext Hook in React.
+- kind of like a service in Ember.js
+-  create context and provider.
+- You want to set an umbrella to components that share the state.
 
