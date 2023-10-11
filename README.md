@@ -103,4 +103,7 @@ useEffect(() => {
 - kind of like a service in Ember.js
 -  create context and provider.
 - You want to set an umbrella to components that share the state.
+- ```js
+  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+  ```
 
