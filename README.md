@@ -101,9 +101,18 @@ useEffect(() => {
 - Prop Drilling : process in React where data is passed from one part of the tree to another by going through multiple levels of components
 - In order to reduce prop drilling we use the useContext Hook in React.
 - kind of like a service in Ember.js
--  create context and provider.
+- create context and provider.
 - You want to set an umbrella to components that share the state.
 - ```js
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
   ```
 
+## **Part 10 React Custom Hooks**
+
+- Custom hooks are just functions that start with "use" and can call other hooks. The primary reason to use custom hooks is to encapsulate and extract component logic into reusable functions.
+- Inside the Hook Function always return the functions or values you want to use throughout the program.
+- `function useLocalStorage(key, initialValue)`
+- `return [value, setStoredValue, removeStoredValue];`
+- inside the component
+  - `const [name, setName, removeName] = useLocalStorage('name', 'mike')`
+- the LHS is the return values, and RHS is the props that is being passed to the custom hook.
