@@ -117,7 +117,7 @@ useEffect(() => {
   - `const [name, setName, removeName] = useLocalStorage('name', 'mike')`
 - the LHS is the return values, and RHS is the props that is being passed to the custom hook.
 
-## **Part 11 React Router -RouterApp **
+## **Part 11 React Router -RouterApp**
 
 - [Official Docs]("https://reactrouter.com/en/main/start/tutorial")
 - create a separate page folder, this is where your pages will go.
