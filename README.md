@@ -116,3 +116,38 @@ useEffect(() => {
 - inside the component
   - `const [name, setName, removeName] = useLocalStorage('name', 'mike')`
 - the LHS is the return values, and RHS is the props that is being passed to the custom hook.
+
+## **Part 11 React Router -RouterApp **
+
+- [Official Docs]("https://reactrouter.com/en/main/start/tutorial")
+- create a separate page folder, this is where your pages will go.
+- In the main page, use the `RouterProvider, createBrowserRouter` hooks provided by React Router.
+- ```js
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Root />,
+      errorElement: <NotFound />,
+      children: [
+        { index: true, element: <div>Home</div> },
+        { path: "videos", element: <Videos /> },
+        { path: "videos/:videoId", element: <VideoDetail /> },
+      ],
+    },
+  ]);
+  ```
+  `return <RouterProvider router={router} />;`
+- Add the following pages in pages file
+- Adding an outlet: Everything inside the outlet will change. Add this inside the root file /  
+  - ```js
+    <div>
+      <NavBar />
+      <Outlet />
+    </div>
+    ```
+- Adding extra parameters --> ` { path: "videos/:videoId", element: <VideoDetail /> },`
+- inside the file use the `useNavigate` hook. 
+  - `const navigate = useNavigate();`
+  - ```navigate(`/videos/${text}`);```
+- inside the child page, you can access the parameter value using the `useParams` hook
+  - `const {videoId} = useParams();`

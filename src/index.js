@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import CustomHookApp from "./CustomHookApp";
+import RouterApp from "./RouterApp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CustomHookApp />
+    <RouterApp />
   </React.StrictMode>
 );
 
